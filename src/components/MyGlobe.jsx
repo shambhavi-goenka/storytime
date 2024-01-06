@@ -1,5 +1,6 @@
 import { useState, useEffect, React } from 'react';
 import Globe from 'react-globe.gl';
+import { pointsData } from "../constants";
 
 const MyGlobe = () => {
     const markerSvg = `<svg viewBox="-4 0 36 36">
@@ -7,40 +8,13 @@ const MyGlobe = () => {
     <circle fill="#1e293b" cx="14" cy="14" r="7"></circle>
     </svg>`;
 
-    const pointsData = [
-        {
-            id: 'papuaNewGuinea',
-            lat: -6.7916,
-            lng: 147.3272, // Latitude and Longitude for Papua New Guinea
-            size: 10,
-            label: 'Papua New Guinea',
-            info: 'This is Papua New Guinea. Additional information can go here.',
-        },
-        {
-            id: 'newYork',
-            lat: 40.7128,
-            lng: -74.006, // Latitude and Longitude for New York
-            size: 15,
-            label: 'New York',
-            info: 'This is New York City. Additional information can go here.',
-        },
-        {
-            id: 'saharaDesert',
-            lat: 21.42,
-            lng: 13.41, // Latitude and Longitude for Sahara Desert
-            size: 20,
-            label: 'Sahara Desert',
-            info: 'This is the Sahara Desert. Additional information can go here.',
-        },
-    ];
+    const isMobileScreen = () => window.matchMedia('(max-width: 768px)').matches;
 
-
-
-
+    let currentlyClickedElement = null;
+    
     return (
         <div style={{ width: '100%' }}>
             <Globe
-                // globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                 backgroundColor="#0f172a"
@@ -53,7 +27,50 @@ const MyGlobe = () => {
 
                     el.style['pointer-events'] = 'auto';
                     el.style.cursor = 'pointer';
-                    el.onclick = () => console.info(d.info);
+
+                   
+                    el.onclick = () => {
+
+                        if (currentlyClickedElement) {
+                            // Reset the styles or do whatever you need to do for the previously clicked element
+                            currentlyClickedElement.style.color = 'red'; // Reset color or any other styles
+                            currentlyClickedElement.tooltip.remove();
+                            currentlyClickedElement.clicked = false; // Reset the custom 'clicked' property
+                        }
+
+
+                        if (el.clicked) {
+                            el.tooltip.remove();
+                            el.style.color = 'red';
+                            el.clicked = false;
+                        }
+
+                        else {
+
+                            el.style.color = 'yellow';
+
+                            // Create and show the tooltip on hover
+                            const tooltip = document.createElement('div');
+                            tooltip.style.position = 'absolute';
+                            tooltip.style.top = `${event.clientY}px`;
+                            tooltip.style.left = `${event.clientX}px`;
+                            tooltip.style.padding = '8px';
+                            tooltip.style.background = 'rgba(255, 255, 255, 0.9)';
+                            tooltip.style.border = '1px solid #ccc';
+                            tooltip.style.borderRadius = '4px';
+                            tooltip.innerHTML = `<p>${d.info} <a href="/posts/${d.id}">Click here for more info!</a></p>`;
+                            document.body.appendChild(tooltip);
+
+                            // Store the tooltip element for removal later
+                            el.tooltip = tooltip;
+                            
+                            el.clicked = true;
+                            currentlyClickedElement = el;
+                        }
+                        
+                    }
+                    
+
                     return el;
                 }}
             />

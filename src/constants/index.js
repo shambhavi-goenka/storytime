@@ -26,4 +26,32 @@ const articles = [
 ];
 
 
-export {articles};
+const pointsData = [
+        {
+            id: 'article1',
+            lat: -6.7916,
+            lng: 147.3272, // Latitude and Longitude for Papua New Guinea
+            size: 10,
+            label: 'Papua New Guinea',
+            info: 'This is Papua New Guinea. Additional information can go here.',
+        },
+        {
+            id: 'article1',
+            lat: 40.7128,
+            lng: -74.006, // Latitude and Longitude for New York
+            size: 15,
+            label: 'New York',
+            info: 'This is New York City. Additional information can go here.',
+        },
+        {
+            id: 'article2',
+            lat: 21.42,
+            lng: 13.41, // Latitude and Longitude for Sahara Desert
+            size: 20,
+            label: 'Sahara Desert',
+            info: 'This is the Sahara Desert. Additional information can go here.',
+        },
+    ];
+
+
+export {articles, pointsData};
