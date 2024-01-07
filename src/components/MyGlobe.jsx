@@ -58,7 +58,7 @@ const MyGlobe = () => {
                             tooltip.style.background = 'rgba(255, 255, 255, 0.9)';
                             tooltip.style.border = '1px solid #ccc';
                             tooltip.style.borderRadius = '4px';
-                            tooltip.innerHTML = `<p>${d.info} <a href="/posts/${d.id}">Click here for more info!</a></p>`;
+                            tooltip.innerHTML = `<p>${d.info} <a href="/posts/${d.id}"><u>View Story!</u></a></p>`;
                             document.body.appendChild(tooltip);
 
                             // Store the tooltip element for removal later
