@@ -54,7 +54,7 @@ const Posts = () => {
                     <li key={article.id} className="border w-4/5 mx-auto border-gray-400 rounded-lg md:p-4 bg-lime-950 sm:py-3 py-4 px-2 m-10">
                         <div className='flex items-center'>
                             <div className="m-2 flex items-center flex-shrink-0">
-                                <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg" 
+                                <img src={article.images[0]} 
                                     className="object-cover rounded-full w-24 h-24 sm:w-30 sm:h-30 md:w-44 md:h-44 lg:w-48 lg:h-48" alt={article.title} />
                             </div>
                             <div className="pl-12 md:pl-10 xs:pl-10">

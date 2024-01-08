@@ -1,4 +1,9 @@
-import {sample, sampleImg} from "../assets";
+const img_1 = 'https://firebasestorage.googleapis.com/v0/b/storytime-1.appspot.com/o/images%2F';
+const img_2 = '.png?alt=media&token=c579cc61-9703-4aaf-8387-e438e9716e94';
+
+const audio_1 = 'https://firebasestorage.googleapis.com/v0/b/storytime-1.appspot.com/o/audio%2F';
+const audio_2 = '.mp3?alt=media&token=ff319216-13e1-4869-a667-8cb91bdbad55';
+
 
 const articles = [
   { id: 'article1', title: 'Mutualism among Animals', tags: ['Bird', 'Crododile', 'Marsupial'], place :'Asia', date: "JAN 03, 2024",
@@ -25,8 +30,8 @@ const articles = [
       "In that critical moment, Hoppy realized the importance of his parents' wisdom and the genuine concern they held for his well-being. The forest echoed with the valuable lesson learned – trust was not to be taken lightly, and the bonds forged over years were far more meaningful than fleeting friendships.",
       "With newfound understanding, Hoppy returned to the embrace of his old friends – his parents and the creatures who had always cared for him. The rainforest continued to thrive with lessons learned, as the tale of Hoppy and Whistler became a part of the rich tapestry of the enchanted woodland.",
   ],
-  images: [sampleImg, sampleImg],
-  audio: sample
+  images: [img_1+'tree-kangaroo'+img_2, img_1+'plover-bird%2Bcroc'+img_2],
+  audio: audio_1+'sample'+audio_2
   },
 
   { id: 'article2', title: 'Article 2', tags: ['Animal'], place :'Africa', date: "JAN 05, 2024",
@@ -37,8 +42,8 @@ const articles = [
       '2',
       'Curabitur consectetur erat eu massa cursus, et viverra lectus hendrerit.'
   ],
-  images: [sampleImg, sampleImg],
-  audio: sample
+  images: [img_1+'plover-bird%2Bcroc'+img_2, img_1+'plover-bird%2Bcroc'+img_2],
+  audio: audio_1+'sample'+audio_2
   },
 
 ];
