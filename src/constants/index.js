@@ -4,6 +4,7 @@ const img_2 = '.png?alt=media&token=c579cc61-9703-4aaf-8387-e438e9716e94';
 const audio_1 = 'https://firebasestorage.googleapis.com/v0/b/storytime-1.appspot.com/o/audio%2F';
 const audio_2 = '.mp3?alt=media&token=ff319216-13e1-4869-a667-8cb91bdbad55';
 
+const token = import.meta.env.VITE_APItoken;
 
 const articles = [
   { id: 'article1', title: 'Mutualism among Animals', tags: ['Bird', 'Crododile', 'Marsupial'], place :'Asia', date: "JAN 03, 2024",
@@ -25,6 +26,7 @@ const articles = [
       "Back at Hoppy's home, the young tree-kangaroo was eager to share his newfound trust in Whistler with his parents. However, despite the successful test, his parents remained unconvinced. To them, trust was not a one-time event, and they couldn't ignore the persistent association between Whistler and the crocodile.",
       "Determined to follow his own path, Hoppy rebelled against his parents' advice and continued to spend time with Whistler. The bird, in turn, led Hoppy to the territory of the crocodile Snapper.",
       '2',
+      token,
       "In a twist of fate, Hoppy found himself in grave danger as Snapper eyed him hungrily. The crocodile, part of a chain of deception orchestrated by Whistler, had played his part in the plan.",
       "Just as Snapper lunged forward, Hoppy's parents arrived on the scene, having anticipated the peril their son might face. They swiftly intervened, saving Hoppy from the jaws of danger.",
       "In that critical moment, Hoppy realized the importance of his parents' wisdom and the genuine concern they held for his well-being. The forest echoed with the valuable lesson learned – trust was not to be taken lightly, and the bonds forged over years were far more meaningful than fleeting friendships.",
