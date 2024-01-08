@@ -1,10 +1,3 @@
-const img_1 = 'https://firebasestorage.googleapis.com/v0/b/storytime-1.appspot.com/o/images%2F';
-const img_2 = '.png?alt=media&token=c579cc61-9703-4aaf-8387-e438e9716e94';
-
-const audio_1 = 'https://firebasestorage.googleapis.com/v0/b/storytime-1.appspot.com/o/audio%2F';
-const audio_2 = '.mp3?alt=media&token=ff319216-13e1-4869-a667-8cb91bdbad55';
-
-const token = import.meta.env.VITE_APItoken;
 
 const articles = [
   { id: 'article1', title: 'Mutualism among Animals', tags: ['Bird', 'Crododile', 'Marsupial'], place :'Asia', date: "JAN 03, 2024",
@@ -26,14 +19,13 @@ const articles = [
       "Back at Hoppy's home, the young tree-kangaroo was eager to share his newfound trust in Whistler with his parents. However, despite the successful test, his parents remained unconvinced. To them, trust was not a one-time event, and they couldn't ignore the persistent association between Whistler and the crocodile.",
       "Determined to follow his own path, Hoppy rebelled against his parents' advice and continued to spend time with Whistler. The bird, in turn, led Hoppy to the territory of the crocodile Snapper.",
       '2',
-      token,
       "In a twist of fate, Hoppy found himself in grave danger as Snapper eyed him hungrily. The crocodile, part of a chain of deception orchestrated by Whistler, had played his part in the plan.",
       "Just as Snapper lunged forward, Hoppy's parents arrived on the scene, having anticipated the peril their son might face. They swiftly intervened, saving Hoppy from the jaws of danger.",
       "In that critical moment, Hoppy realized the importance of his parents' wisdom and the genuine concern they held for his well-being. The forest echoed with the valuable lesson learned – trust was not to be taken lightly, and the bonds forged over years were far more meaningful than fleeting friendships.",
       "With newfound understanding, Hoppy returned to the embrace of his old friends – his parents and the creatures who had always cared for him. The rainforest continued to thrive with lessons learned, as the tale of Hoppy and Whistler became a part of the rich tapestry of the enchanted woodland.",
   ],
-  images: [img_1+'tree-kangaroo'+img_2, img_1+'plover-bird%2Bcroc'+img_2],
-  audio: audio_1+'sample'+audio_2
+  images: ['https://firebasestorage.googleapis.com/v0/b/storytime-1.appspot.com/o/images%2Ftree-kangaroo.png?alt=media&token=c84c4192-1593-4d94-b990-85503c346bd8', 'https://firebasestorage.googleapis.com/v0/b/storytime-1.appspot.com/o/images%2Fplover-bird%2Bcroc.png?alt=media&token=c579cc61-9703-4aaf-8387-e438e9716e94'],
+  audio: 'https://firebasestorage.googleapis.com/v0/b/storytime-1.appspot.com/o/audio%2Fsample.mp3?alt=media&token=ff319216-13e1-4869-a667-8cb91bdbad55'
   },
 
   { id: 'article2', title: 'Article 2', tags: ['Animal'], place :'Africa', date: "JAN 05, 2024",
@@ -44,8 +36,8 @@ const articles = [
       '2',
       'Curabitur consectetur erat eu massa cursus, et viverra lectus hendrerit.'
   ],
-  images: [img_1+'plover-bird%2Bcroc'+img_2, img_1+'plover-bird%2Bcroc'+img_2],
-  audio: audio_1+'sample'+audio_2
+  images: ['https://firebasestorage.googleapis.com/v0/b/storytime-1.appspot.com/o/images%2Fplover-bird%2Bcroc.png?alt=media&token=c579cc61-9703-4aaf-8387-e438e9716e94', 'https://firebasestorage.googleapis.com/v0/b/storytime-1.appspot.com/o/images%2Fplover-bird%2Bcroc.png?alt=media&token=c579cc61-9703-4aaf-8387-e438e9716e94'],
+  audio: 'https://firebasestorage.googleapis.com/v0/b/storytime-1.appspot.com/o/audio%2Fsample.mp3?alt=media&token=ff319216-13e1-4869-a667-8cb91bdbad55'
   },
 
 ];
