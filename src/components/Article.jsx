@@ -15,10 +15,9 @@ const Article = () => {
         // Assuming you have image URLs in the `images` array of the article
         const imageUrl = article.images[parseInt(paragraph)-1]
         // const imageUrl = article.images[index / 2]; // Divide by 2 to get the corresponding image index
-
-        return <img key={index} src={imageUrl} alt={`Image ${index / 2 + 1}`} className="mb-4" />;
+        return <img key={index} src={imageUrl} alt={`Image ${index / 2 + 1}`} className="my-10 w-3/5 item-center mx-auto rounded-xl shadow-xl shadow-[#2b4e86]" />;
       } else {
-        return <p key={index} className="mb-4">{paragraph}</p>;
+        return <p key={index} className="my-4">{paragraph}</p>;
       }
     });
   };
@@ -42,7 +41,7 @@ const Article = () => {
       <div className='bg-gray-700'>
         <div className='w-4/5 mx-auto pt-10'>
           <article className='p-8 rounded-md'> 
-            <h2 className='text-3xl font-bold mb-4 text-[#227fe3]'>{article.title}</h2>
+            <h2 className='text-5xl font-bold mb-4 text-[#227fe3]'>{article.title}</h2>
             <div className='flex items-center mb-5'>
               <p className='text-gray-400 mr-5'>{article.date}</p>
               <audio ref={audioRef} src={article.audio} />

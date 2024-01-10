@@ -1,35 +1,21 @@
 
 const articles = [
-  { id: 'article1', title: 'Mutualism among Animals', tags: ['Bird', 'Crododile', 'Marsupial'], place :'Asia', date: "JAN 03, 2024",
-  content: ['Once upon a time in the heart of the dense rainforest, a tale unfolded, teaching the creatures of the woodland about the importance of trust and the wisdom of those who care deeply for us.',
-      "In the vibrant and lush rainforest, a young tree-kangaroo named Hoppy had just grown out of his mother's pouch and was filled with the curiosity to explore the world around him. Hoppy, with his kind and adventurous nature, was eager to make friends and discover the wonders of the rainforest.",
+  { id: 'mutualism', title: 'Mutualism among Animals', tags: ['Bird', 'Crododile', 'Marsupial'], place :'Asia', date: "JAN 03, 2024",
+  content: ["Once upon a time, deep within the rainforests of Papua New Guinea, there was a tree-kangaroo named Hopper. He was a curious lad who had just outgrown his mama’s pouch and was ready to explore the world. ",
+      "Hopper was raised in a loving environment, and in return only had love to give. He was kind of heart and never judged a book by its cover. During his evening climbs, he chanced upon Whistler, the plover bird. Many animals didn’t like Whistler but that didn’t stop Hopper from being kind. Hopper had fun listening to Whistler’s tales of his travels across the rainforest, from the highlands to the marshlands. Soon they started roaming the forest together and grew closer. Hopper’s friends warned him of their friendship due to Whistler’s clandestine allegiance to Snapper the crocodile but Hopper believed that his friendship was pure.",
       '1',
-      "In this enchanting forest lived a plover bird named Whistler. Whistler was known for his melodic tunes that echoed through the trees, but his friendship with a crocodile named Snapper had left him isolated from the other creatures. No one trusted Whistler, except for the kind-hearted Hoppy.",
-      "Hoppy saw beyond the judgments of others and decided to befriend Whistler. They explored the rainforest together, becoming fast friends despite the disapproval from Hoppy's parents.",
-      "Concerned for their young tree-kangaroo, Hoppy's parents warned him about the potential dangers of being friends with Whistler. But the adolescent Hoppy, driven by youthful optimism and a desire to see the good in everyone, chose to ignore their advice.",
-      "As their friendship blossomed, Hoppy's parents grew increasingly worried. They couldn't fathom the alliance between their innocent son and the bird associated with the crocodile. Fearing for Hoppy's safety, they urged him to reconsider his friendship with Whistler.",
-      "In an attempt to assess the depth of Whistler's loyalty, Hoppy devised a plan. He led Whistler into a remote part of the rainforest known for its dangers, where the cunning fox, Shadow, roamed. Hoppy decided it was time to put Whistler to the test.",
-      '"Hoppy," Whistler chirped cheerfully, unaware of the impending challenge, "what grand adventure do you have in mind today?"',
-      'With a mischievous glint in his eye, Hoppy responded, "I have heard rumors of a mystical waterfall hidden deep within this neck of the woods. But reaching it is no easy feat. Only the bravest and most trustworthy can make the journey. Are you up for the challenge, Whistler?"',
-      "Whistler, perceptive as ever, sensed the gravity of Hoppy's words. He nodded, 'Hoppy, I'm ready for any adventure with you. Lead the way.'",
-      "As they navigated the dense undergrowth, crossed babbling streams, and climbed steep hills, Hoppy secretly watched Whistler's every move. Unbeknownst to the bird, this journey was designed to test his commitment and understanding.",
-      "In the face of adversity, Whistler proved to be a loyal and dependable companion. When they encountered the dangerous fox, Shadow, Whistler took charge. He instructed Hoppy to hide while he distracted the fox into a chase, showcasing his courage and quick thinking.",
-      "As the perilous situation unfolded, Whistler's clever maneuvers kept the fox at bay. Eventually, the bird managed to escape Shadow's pursuit and returned to Hoppy's side, unscathed. Whistler understood the test but chose not to confront Hoppy about it.",
-      "In the quiet moments by the waterfall, Whistler glanced at Hoppy with a knowing twinkle in his eye. He silently acknowledged the bond of trust they had forged, demonstrating that actions spoke louder than words.",
-      "Back at Hoppy's home, the young tree-kangaroo was eager to share his newfound trust in Whistler with his parents. However, despite the successful test, his parents remained unconvinced. To them, trust was not a one-time event, and they couldn't ignore the persistent association between Whistler and the crocodile.",
-      "Determined to follow his own path, Hoppy rebelled against his parents' advice and continued to spend time with Whistler. The bird, in turn, led Hoppy to the territory of the crocodile Snapper.",
+      "Hopper’s mama found out about this friendship and immediately dissuaded him from it but he was resolute. However, Hopper decided to take some of this advice and devised a test for Whistler. During one of their walks, Hopper casually suggested to venture to the southern side of the forest, beyond the waterfall. This was quite unexpected from Hopper as Whistler was always the one pushing him for adventure. Whistler was astute enough to catch onto this and understood something was amiss. He quietly went along with his friend and not before long, the dangerous fox Shadow, picked up on their scent. While she was on the prowl, she accidentally stepped on and snapped a twig. With that, Whistler immediately caught onto the plan and instructed Hopper to hide among the rhododendrons that would mask his musk. Whistler flew into action and distracted Shadow with a good half hour long chase and snuck back to Hopper. Seeing how Whistler passed his test with flying colours, Hopper was certain that Whistler was his true friend.",
+      `Upon returning home, Hopper told his mama about all that happened and how Whistler passed his test. She was extremely aggrieved to hear of this and got angry with Hopper for putting himself in danger just to prove Whistler’s loyalty. Nevertheless, her son put up a strong argument in favour of Whistler but she wasn’t convinced. “Call it mama’s intuition, but I know I’m right”, she said. She warned Hopper that a two day friendship does not mean that Whistler is to be trusted. Whistler has been friends with Snapper for years and there was no reason for him to pick him over Snapper. Hopper fought that she’s just paranoid and doesn’t understand modern times so she reluctantly gave in with the condition that Hopper always informs her before venturing out with Whistler. `,
       '2',
-      "In a twist of fate, Hoppy found himself in grave danger as Snapper eyed him hungrily. The crocodile, part of a chain of deception orchestrated by Whistler, had played his part in the plan.",
-      "Just as Snapper lunged forward, Hoppy's parents arrived on the scene, having anticipated the peril their son might face. They swiftly intervened, saving Hoppy from the jaws of danger.",
-      "In that critical moment, Hoppy realized the importance of his parents' wisdom and the genuine concern they held for his well-being. The forest echoed with the valuable lesson learned – trust was not to be taken lightly, and the bonds forged over years were far more meaningful than fleeting friendships.",
-      "With newfound understanding, Hoppy returned to the embrace of his old friends – his parents and the creatures who had always cared for him. The rainforest continued to thrive with lessons learned, as the tale of Hoppy and Whistler became a part of the rich tapestry of the enchanted woodland.",
+      `The next day, hoping to prey on his newfound trust, Whistler coerced Hopper to accompany him for an adventure. Hopper couldn’t’ see his mama around so he left a note saying that they were heading towards the eastern marshlands this time. He thought we was going to see mud flappers but little did he know that this was a part of Whistler’s devious plan. Snapper, having enough time to prepare, camouflaged himself as a strange log and Whistler was egging Hopper to play on that log.`,
+      `With a loud snap, Snapper’s jaws caught onto Hopper’s leg and he was screaming to escape. Luckily, his mama read his note and came there to save him. She swung from the vines and knocked Whistler off. Then with a swift blow to Snapper’s nose, she released Hopper from his jaws and rushed him back home. Hopper then learnt an important lesson which was to listen to the wisdom of the elders and that times change faster than people.`
   ],
   images: ['https://firebasestorage.googleapis.com/v0/b/storytime-1.appspot.com/o/images%2Ftree-kangaroo.png?alt=media&token=c84c4192-1593-4d94-b990-85503c346bd8', 'https://firebasestorage.googleapis.com/v0/b/storytime-1.appspot.com/o/images%2Fplover-bird%2Bcroc.png?alt=media&token=c579cc61-9703-4aaf-8387-e438e9716e94'],
   audio: 'https://firebasestorage.googleapis.com/v0/b/storytime-1.appspot.com/o/audio%2Fsample.mp3?alt=media&token=ff319216-13e1-4869-a667-8cb91bdbad55'
   },
 
   { id: 'article2', title: 'Article 2', tags: ['Animal'], place :'Africa', date: "JAN 05, 2024",
-  content: ['Line 1',
+  content: ['Lorem ipsum and all',
       'Nullam maximus venenatis mauris id lobortis.',
       '1',
       'Morbi a porta diam. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
@@ -45,7 +31,7 @@ const articles = [
 
 const pointsData = [
         {
-            id: 'article1',
+            id: 'mutualism',
             lat: -6.7916,
             lng: 147.3272, // Latitude and Longitude for Papua New Guinea
             size: 10,
