@@ -14,7 +14,7 @@ const articles = [
   audio: 'https://firebasestorage.googleapis.com/v0/b/storytime-1.appspot.com/o/audio%2Fsample.mp3?alt=media&token=ff319216-13e1-4869-a667-8cb91bdbad55'
   },
 
-  { id: 'friendship', title: 'Forest Friendship', tags: ['Capybara', 'Anteater', 'Monkey'], place :'Africa', date: "JAN 05, 2024",
+  { id: 'friendship', title: 'Forest Friendship', tags: ['Capybara', 'Anteater', 'Monkey'], place :'South America', date: "JAN 05, 2024",
   content: [`In a lush and vibrant rainforest, there lived a friendly and wise capybara named Cappy. Cappy was not your average capybara; he possessed a special ability to understand and communicate with all the animals in the forest. This unique gift made him a cherished friend among the various creatures that called the rainforest their home.`,
       `Cappy's days were filled with laughter and camaraderie as he hopped from one group of animals to another, sharing stories and offering advice. His warm and inviting nature drew others toward him, creating a sense of unity in the forest.`,
       `One day, a timid and lonely anteater named Andy approached Cappy. With a soft snuffling sound, Andy explained how he felt isolated and longed for companionship. Cappy, recognizing the importance of friendship, decided to help Andy and introduced him to a diverse group of animals.`,
