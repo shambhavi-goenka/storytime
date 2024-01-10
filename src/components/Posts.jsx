@@ -65,7 +65,7 @@ const Posts = () => {
                                     <span>{article.date}</span>
                                 </p>
 
-                                <div className='mb-2 leading-6'>
+                                <div className='mb-2 leading-6 text-yellow-800'>
                                     <p>{article.content[0].length > 100 ? `${article.content[0].slice(0, 100)}...` : article.content[0]}</p>
                                 </div>
 
